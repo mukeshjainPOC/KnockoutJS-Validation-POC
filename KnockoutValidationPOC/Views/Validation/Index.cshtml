@@ -1,0 +1,118 @@
+﻿@section scripts {
+    <script src="~/Scripts/knockout-2.2.1.js"></script>
+    <script src="~/Scripts/knockout.validation.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="~/Content/KnockoutValidation/Validation.js"></script>
+    <script src="~/Content/KnockoutValidation/Model.js"></script>
+    <script src="~/Content/KnockoutValidation/ViewModel.js"></script>
+}
+
+@section styles {
+    <link href="~/Content/css/Site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.1/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+}
+
+<h1>Create Customer</h1>
+<div class="hRow">
+    <p class="vCol right required">Indicates required</p>
+</div>
+<div class="hRow">
+    <div class="hRow" data-bind="visible: Customer.Id">
+        <div class="vCol four">
+            <label>Customer ID</label>
+            <div class="autoWidth">
+                <div class="vCol">
+                    <p data-bind="text: Customer.Id" />
+                </div>
+            </div>
+        </div>
+        <div class="vCol four">
+
+        </div>
+
+    </div>
+</div>
+<div class="hRow">
+    <div class="vCol four">
+        <label class="required">Customer Name</label>
+        <input class="k-widget" data-bind="value: Customer.CustomerName, disable: Customer.Id" />
+    </div>
+    <div class="vCol four">
+        <label class="required">Customer Address</label>
+        <input class="k-widget" data-bind="value: Customer.Address1, disable: Customer.Id" />
+    </div>
+    <div class="vCol four">
+        <label>Customer Address 2</label>
+        <input class="k-widget" data-bind="value: Customer.Address2, disable: Customer.Id" />
+    </div>
+</div>
+<div class="hRow">
+    <div class="vCol four">
+        <label>Customer Address 3</label>
+        <input class="k-widget" data-bind="value: Customer.Address3, disable: Customer.Id" />
+    </div>
+    <div class="vCol four">
+        <label class="required">Customer City</label>
+        <input class="k-widget" data-bind="value: Customer.City, disable: Customer.Id" />
+    </div>
+    <div class="vCol four">
+        <label class="required">Customer State</label>
+        <input class="k-widget" data-bind="value: Customer.State, disable: Customer.Id" />
+    </div>
+</div>
+<div class="hRow">
+    
+    <div class="vCol four">
+        <label class="required">Customer Postal Code</label>
+        <input class="k-widget" data-bind="value: Customer.Zip, disable: Customer.Id" />
+    </div>
+    <div class="vCol four">
+        <label class="required">Customer Country</label>
+        <select class="k-widget" data-bind="valueUpdate: 'afterkeydown', options: Country, optionsText: 'Text', optionsValue: 'Id', value: Customer.CountryCode, visible: !(Customer.Id()),optionsCaption: 'Please Select...'"></select>
+    </div>
+    <div class="vCol four">
+        <label class="required">Customer Contact Email</label>
+        <input class="k-widget" data-bind="value: Customer.ContactEmail, disable: Customer.Id" />
+    </div>
+</div>
+<div class="hRow">
+   
+   
+    <div class="vCol four">
+        <label class="required">Customer Telephone</label>
+        <input class="k-widget" data-bind="value: Customer.Telephone, disable: Customer.Id" />
+    </div>
+    <div class="vCol four">
+        <label>Customer Fax</label>
+        <input class="k-widget" data-bind="value: Customer.Fax, disable: Customer.Id" />
+    </div>
+    <div class="vCol four">
+        <label>Customer Status</label>
+        <select class="k-widget" data-bind="valueUpdate: 'afterkeydown', options: StatusList, optionsText: 'Text', optionsValue: 'Id', value: Customer.Status, visible: !(Customer.Id()),optionsCaption: 'Please Select...'"></select>
+    </div>
+</div>
+<div class="hRow">
+    <div class="vCol two notes">
+        <label>Comments</label>
+        <textarea class="k-widget" data-bind="value: Customer.Comments, disable: Customer.Id" maxlength="150"></textarea>
+        <p data-bind="visible:!(Customer.Id())">(Limit 150 characters)</p>
+    </div>
+</div>
+<div class="hRow">
+</div>
+<div class="hRow">
+    <div class="vCol four">
+    </div>
+</div>
+<div class="hRow">
+    <div class="vCol four double">
+        <div class="vCol four">
+            <input type="button" value="Submit" data-bind="click: SubmitEvent, disable: Customer.Id" />
+        </div>
+        <div class="vCol four">
+            <input type="button" value="Cancel" data-bind="click: CancelEvent" />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,1465 @@
+﻿
+/* Standard Global Styles*/
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+    *::-ms-clear {
+        display: none;
+    }
+
+    * HTML {
+        position: absolute;
+    }
+
+HTML {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+* body, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /*overflow-y: scroll;*/
+}
+
+
+body {
+    font-family: "Segoe UI", Tahoma, Helvetica,  Arial, Verdana, sans-serif;
+    font-weight: 500;
+    color: #000;
+    z-index: 1;
+    direction: ltr /*@leftToRight*/;
+}
+
+/* Backward browser support */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+p, H4, H5, body, div, span, td, tr {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-size: 1.2em;
+    font-size: 1.2rem;
+}
+
+
+.siteTitle {
+    font-size: 1.9em;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #666;
+    text-transform: capitalize;
+}
+
+h1,
+.sectionTitle {
+    font-size: 2.4em;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #666;
+}
+
+h2,
+.containerTitle {
+    font-size: 1.6em;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000;
+}
+
+h3,
+.textHeadingMed {
+    font-size: 1.4em;
+    font-size: 1.4rem;
+    line-height: 1.4em;
+    font-weight: 600;
+    color: #000;
+}
+
+h4,
+.textHeading {
+    font-size: 1.2em;
+    font-size: 1.2rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    color: #000;
+}
+
+a,
+a:link,
+a:visited,
+.linkText {
+    font-size: 1.2em;
+    font-size: 1.2rem;
+    line-height: 1.2em;
+    line-height: 1.2rem;
+    color: #0072C6;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+    a:hover, a:active, a:focus,
+    .linkText.active,
+    .linkText:hover,
+    .linkText:active,
+    .linkText:focus {
+        text-decoration: underline;
+    }
+
+    .linkText.small,
+    a.smallLinkText,
+    a.smallLinkText:link,
+    a.smallLinkText:visited {
+        font-size: 1.1em;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #666;
+        text-decoration: none;
+    }
+
+        a.smallLinkText:hover,
+        a.smallLinkText:focus,
+        a.smallLinkText:active {
+            color: #0072C6;
+            text-decoration: underline;
+        }
+
+p,
+.stdText {
+    font-size: 1.2em;
+    font-size: 1.2rem;
+    /*line-height: 1.2em;
+	line-height: 1.2rem;*/
+    font-weight: 500;
+    color: #000;
+}
+
+    .stdTextWhite,
+    .stdText.white {
+        font-size: 1.2em;
+        font-size: 1.2rem;
+        color: #FFF;
+    }
+
+.stdTextMed {
+    font-size: 1.4em;
+    font-size: 1.4rem;
+    /*line-height: 1.4em;
+	line-height: 1.4rem;*/
+    font-weight: 500;
+    color: #000;
+}
+
+label,
+.label,
+.stdLabel {
+    font-size: 1.1em;
+    font-size: 1.1rem;
+    line-height: 1.2em;
+    line-height: 1.2rem;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    margin-right: 1em;
+    margin-right: 1rem;
+}
+
+textarea {
+    font-size: 1.2em;
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.stdLabelMed {
+    font-size: 1.4em;
+    font-size: 1.4rem;
+    line-height: 1.4em;
+    line-height: 1.4rem;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    margin-right: 1em;
+    margin-right: 1rem;
+}
+
+.infoLabel {
+    font-size: 1.2em;
+    font-size: 1.2rem;
+    line-height: 1.2em;
+    line-height: 1.2rem;
+    font-weight: 500;
+    color: #000;
+    border-bottom: dashed 1px #000;
+    text-transform: none;
+}
+
+p.required:before,
+label.required:before {
+    content: '*';
+    padding: 0.1em 0.3em 0.1em 0;
+    color: #FF0000;
+}
+
+
+
+
+.stdInput,
+input[type="text"],
+input[type="email "],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"] {
+    font-size: 1.2em;
+    font-size: 1.2rem;
+    height: 2.4em;
+    height: 2.4rem;
+    min-width: 5em;
+    min-width: 5rem;
+    background-color: #FFF;
+    border: 1px solid #666;
+    padding: 4px;
+}
+
+input[type="button"],
+input[type="submit"],
+button,
+*.button,
+a.stdBtn,
+*.stdBtn {
+    font-size: 1.2em;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #FFF;
+    background-color: #666;
+    padding: 7px 10px;
+    border:solid 0.5px transparent;
+    text-transform: uppercase;
+    min-width: 10em;
+    min-width: 10rem;
+    min-height: 30px;
+	text-decoration: none;
+}
+
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    button:hover,
+    *.button:hover,
+    *.stdBtn:hover,
+    input[type="button"]:focus,
+    input[type="submit"]:focus,
+    button:focus,
+    *.button:focus,
+    *.stdBtn:focus {
+        background-color: #0072C6;
+        cursor: pointer;
+    }
+
+/* Global Nav */
+
+.globalNavRoot {
+    font-size: 2.4em;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+}
+
+    .globalNavRoot:hover,
+    .globalNavRoot:focus {
+        color: #0072C6;
+    }
+
+.globalNavItem {
+    cursor: pointer;
+}
+
+.globalNavItem>a>label{
+    font-size: 1.4em;
+    font-size: 1.4rem;
+    font-weight: 500;
+	color:#000;
+}
+
+    .globalNavItem:hover,
+    .globalNavItem:focus {
+        
+        background-color: #0072C6;
+    }
+
+	.globalNavItem>a:focus>label,
+	.globalNavItem:hover>a>label,
+	.globalNavItem:focus>a>label
+	{
+        color: #FFF;
+    }
+
+
+    .globalNavItem:active,
+    .globalNavItem.active {
+        font-size: 1.4em;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #000;
+    }
+
+/* END Global Nav */
+
+/* Bread Crumb */
+a.breadCrumbLink,
+a.breadCrumbLink:link,
+a.breadCrumbLink:visited {
+    font-size: 1.4em;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+}
+
+.breadCrumbNoLink{
+     font-size: 1.4em; font-size: 1.4rem; font-weight: 500; color: #666;
+}
+    a.breadCrumbLink:hover,
+    a.breadCrumbLink:focus {
+        color: #0072C6;
+        text-decoration: underline;
+    }
+
+.breadCrumbLink:active,
+.breadCrumbLink.active {
+    font-size: 1.4em;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #666;
+}
+/* Bread Crumb */
+
+
+/* Help Classes*/
+
+a.helpTextLink,
+a.helpTextLink:link,
+a.helpTextLink:visited,
+.helpTextLink {
+    font-size: 1.2em;
+    font-size: 1.2rem;
+    line-height: 1.3em;
+    line-height: 1.3rem;
+    font-weight: 500;
+    color: #0072C6;
+}
+
+    .helpTextLink:active,
+    .helpTextLink.active,
+    a.helpTextLink:hover,
+    a.helpTextLink:focus {
+        text-decoration: underline;
+    }
+/*End Help Classes*/
+
+/* Tab Classes */
+
+*.tabItem {
+    font-size: 1.2em;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    line-height: 1.6rem;
+    font-weight: 600;
+    color: #000;
+    background-color: #F2F2F2;
+    text-transform: uppercase;
+    text-align: center;
+    min-height: 3em;
+    min-height: 3rem;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+    *.tabItem:active,
+    *.tabItem.active,
+    *.tabItem.t-state-active {
+        font-size: 1.2em;
+        font-size: 1.2rem;
+        line-height: 1.6em;
+        line-height: 1.6rem;
+        font-weight: 600;
+        color: #FFF;
+        background-color: #666;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+    *.tabItem:hover,
+    *.tabItem:focus {
+        color: #FFF !important;
+        background-color: #0072C6 !important;
+    }
+
+.tabContainer {
+    background-color: #FFF;
+    border: solid 2px #666;
+    position: relative;
+    display: inline-block;
+}
+/* END Tab classes */
+
+.dlgText {
+    font-size: 1.4em;
+    font-size: 1.4rem;
+    line-height: 1.6em;
+    line-height: 1.6rem;
+    font-weight: 600;
+}
+
+
+
+.errorInput {
+    border-color: #E81123;
+}
+
+.validation-summary-errors {
+    border: 1px solid red;
+    padding-left: 2em;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+}
+
+select,
+.stdDroplist {
+    font-size: 1.2em;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    min-height: 2.4em;
+    min-height: 2.4rem;
+    padding: 2px;
+}
+
+
+.stdListItem {
+    font-size: 1.2em;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+    display: inline-block;
+    min-height: 1.5em;
+    min-height: 1.5rem;
+    padding: 4px;
+}
+
+    .stdListItem:hover,
+    .stdListItem:focus {
+        color: #FFF;
+        background-color: #0072C6 !important;
+        cursor: pointer;
+    }
+
+
+/*select,
+.stdDroplist
+{
+	font-size: 1.6em;
+	font-size: 1.6rem;
+	line-height:1.8em; 
+	line-height:1.8rem;
+	min-width: 10em;
+	min-width: 10rem;
+	background-color: #FFF;
+	border: 1px solid #666;
+	padding:.25em;
+	vertical-align: middle;
+}
+
+
+select:focus,
+.stdDroplist:focus
+{
+	border-color: #0072C6;
+}
+
+option,
+.stdListItem
+{
+	padding:4px;
+	vertical-align: middle;
+	font-size: 1.2em;
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: #000;
+	cursor: pointer;
+}
+
+option:hover,
+.stdListItem:hover
+{
+	color: #FFF;
+	background-color: #0072C6;
+	
+}*/
+
+.pageItem {
+    font-size: 1.2em;
+    font-size: 1.2rem;
+    background-color: #FFF;
+    width: 24px;
+    height: 2.4em;
+    height: 2.4rem;
+}
+
+    .pageItem:active,
+    .pageItem.active {
+        font-size: 1.2em;
+        font-size: 1.2rem;
+        background-color: #DADADA;
+        width: 24px;
+        height: 2.4em;
+        height: 2.4rem;
+    }
+
+.bannerHeading {
+    font-size: 1.8em;
+    font-size: 1.8rem;
+    color: #000;
+}
+
+
+.fieldErrorText {
+    font-size: 1.2em;
+    font-size: 1.2rem;
+    color: #E81123;
+}
+
+a.stdSecondaryBtn,
+a.stdSecondaryBtn:link,
+a.stdSecondaryBtn:visited,
+input[type="submit"].stdSecondaryBtn,
+input[type="button"].stdSecondaryBtn,
+input[type="submit"].stdSecondaryBtn,
+button.stdSecondaryBtn,
+*.stdSecondaryBtn {
+    color: #666;
+    background-color: transparent;
+    border:solid 0.5px transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 7px 10px;
+    height: 3em;
+    height: 3rem;
+}
+
+    a.stdSecondaryBtn:hover,
+    a.stdSecondaryBtn:active,
+    input[type="button"].stdSecondaryBtn:hover,
+    input[type="submit"].stdSecondaryBtn:hover,
+    button.stdSecondaryBtn:hover,
+    *.stdSecondaryBtn:hover,
+    *.stdSecondaryBtn:hover > *,
+    a.stdSecondaryBtn:focus,
+    a.stdSecondaryBtn:active,
+    input[type="button"].stdSecondaryBtn:focus,
+    input[type="submit"].stdSecondaryBtn:focus,
+    button.stdSecondaryBtn:focus,
+    *.stdSecondaryBtn:focus,
+    *.stdSecondaryBtn:focus > * {
+        background-color: #0072C6;
+        text-decoration: none;
+        color: #FFF;
+    }
+
+.stdSecondaryBtn > * {
+    vertical-align: middle;
+}
+
+*.imgTextBtn, *.imgTextBtn:visited, *.imgTextBtn:active, *.imgTextBtn:link {
+    font-size: 1.6em;
+    font-size: 1.6rem;
+    display: inline-block;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    padding: 7px 10px;
+}
+
+    *.imgTextBtn > * {
+        display: inline-block;
+    }
+
+        *.imgTextBtn > .text {
+            position: relative;
+            bottom: 0.4em;
+        }
+
+    *.imgTextBtn:hover,
+    *.imgTextBtn:focus {
+        text-decoration: none;
+        color: #0072C6;
+    }
+
+/*Action Link Button*/
+*.actionLink, *.imgTextBtn2, a.actionLink, a.imgTextBtn2 {
+    text-decoration: none;
+    color: #666;
+    display: inline-block;
+    font-weight: 600;
+    padding: 0.3em 1em;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-size: 1.2rem;
+    min-height: 2.4em;
+    min-height: 2.4rem;
+    cursor: pointer;
+}
+
+    *.actionLink *, *.imgTextBtn2 *, a.actionLink *, a.imgTextBtn2 * {
+        vertical-align: middle;
+        line-height: 2.4em;
+        line-height: 2.4rem;
+        display: inline-block;
+    }
+
+    *.actionLink > span:first-child, *.imgTextBtn2 > span:first-child, a.actionLink > span:first-child, a.imgTextBtn2 > span:first-child {
+        margin-right: 0.2em;
+    }
+
+    *.actionLink:hover, *.actionLink:focus,
+    *.imgTextBtn2:hover, *.imgTextBtn2:focus,
+    a.actionLink:hover, a.actionLink:focus,
+    a.imgTextBtn2:hover, a.imgTextBtn2:focus  {
+        text-decoration: none;
+        color: #FFF;
+        background-color: #0072C6;
+    }
+
+/* error page classes */
+.errorPageHeader,
+h4.errorPageHeader {
+    font-size: 1.4em;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.errorPageSubHeader {
+    font-size: 1.2em;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #666;
+}
+/* END error page classes */
+
+
+/* filterTile classes */
+.filterTileItem,
+.filterTileItem:link,
+.filterTileItem:visited {
+    color: #666;
+    background-color: #fff;
+    border: solid 1px #666;
+    min-height: 4em;
+    min-height: 4rem;
+    min-width: 20em;
+    min-width: 20rem;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+    .filterTileItem:hover,
+    .filterTileItem:focus,
+    .filterTileItem:active,
+    .filterTileItem.active {
+        color: #fff;
+        background-color: #0072C6 !important;
+        border-color: #0072C6 !important;
+    }
+
+.filterTileCount {
+    font-size: 2.2em;
+    font-size: 2.2rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+
+
+.filterTileActiveItem:hover,
+.filterTileActiveItem:focus,
+.filterTileItem.active:hover,
+.filterTileItem.active:focus {
+    color: #666;
+    background-color: #fff;
+    border-color: #666;
+}
+
+.filterTileItem:active,
+.filterTileItem.active {
+    color: #fff;
+    background-color: #0072C6;
+    border-color: #0072C6;
+}
+
+/* END filterTile classes */
+
+/* Sign In Classes */
+.signInTitleText,
+.signInTitleTextCust,
+.signInTitleTextPart {
+    font-size: 3em;
+    font-size: 3rem;
+}
+
+.signInTitleTextPart {
+    color: #007233;
+}
+
+.signInTitleTextCust {
+    color: #0072C6;
+}
+
+.signInIntroText {
+    font-size: 3em;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #666;
+}
+
+.signInBtnPart {
+    height: 10em;
+    height: 10rem;
+    min-width: 200px;
+    background-color: #007233;
+}
+
+.signInBtnCust {
+    height: 10em;
+    height: 10rem;
+    min-width: 200px;
+    background-color: #0072C6;
+}
+
+.signInBtnLabel {
+    font-size: 1.9em;
+    font-size: 1.9rem;
+    color: #fff;
+}
+
+.signInBtnSubLabel {
+    font-size: 1.2em;
+    font-size: 1.2rem;
+    color: #fff;
+}
+/* END Sign In Classes */
+
+*.focus,
+input[type="text"]:focus,
+input[type="email "]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus {
+    border: solid 1px #0072C6;
+}
+
+
+*:disabled input,
+*.disabled input,
+input:disabled,
+input.disabled {
+    border-color: #EEE;
+}
+
+    *:disabled input[type="button"],
+    *.disabled input[type="button"],
+    *:disabled input[type="submit"],
+    *.disabled input[type="submit"],
+    *:disabled .stdBtn,
+    *.disabled .stdBtn,
+    input[type="button"]:disabled,
+    input[type="button"].disabled,
+    input[type="submit"]:disabled,
+    input[type="submit"].disabled,
+    .stdBtn.disabled,
+    .stdBtn:disabled {
+        background-color: #EEE;
+    }
+
+
+
+*:disabled,
+*.disabled,
+*:disabled *,
+*.disabled *,
+*:disabled:hover,
+*.disabled:hover,
+*:disabled:hover *,
+*.disabled:hover * {
+    color: #a0a0a0 !important;
+    cursor: default;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* Helper / Compound  Styles */
+
+
+
+.active {
+    outline: auto;
+}
+
+.atl {
+    text-align: left !important;
+}
+
+.atr {
+    text-align: right !important;
+}
+
+.atc {
+    text-align: center !important;
+}
+
+.ilb {
+    display: inline-block !important;
+}
+
+.block {
+    display: block !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
+.wrap {
+    white-space: normal !important;
+    -ms-word-break: break-all !important;
+    word-break: break-all !important;
+}
+
+.nowrap {
+    white-space: nowrap !important;
+}
+
+.pointer {
+    cursor: pointer !important;
+}
+
+.upperCase,
+.uppercase {
+    text-transform: uppercase !important;
+}
+
+.white {
+    color: #fff !important;
+}
+
+.black {
+    color: #000 !important;
+}
+
+.bold {
+    font-weight: 600 !important;
+}
+
+.bolder {
+    font-weight: 700 !important;
+}
+
+.readonly {
+    background-color: #DADADA !important;
+    cursor: default !important;
+}
+
+
+.flr {
+    float: right;
+}
+
+.fll {
+    float: left;
+}
+
+.clear,
+.clr {
+    clear: both;
+}
+
+.vt {
+    vertical-align: top !important;
+}
+
+.vb {
+    vertical-align: bottom !important;
+}
+
+
+/*CSS Grid Layout Framework*/
+
+/*Rows*/
+.hRow {
+    width: 100%;
+    margin-bottom: 1.5em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    .hRow.smallButtomBuffer {
+        margin-bottom: 1em;
+    }
+
+    .hRow.validationRow {
+        margin-bottom: 0;
+    }
+
+/*Columns/Row cells*/
+.vCol {
+    display: inline-block;
+    margin-right: -3px;
+    padding: 0 1%;
+    vertical-align: bottom;
+    width: 100%;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    /*Two Columns*/
+    .vCol.two {
+        width: 50%;
+    }
+
+    /*Three Columns*/
+    .vCol.three {
+        width: 33%;
+    }
+
+        .vCol.three.double {
+            width: 66%;
+        }
+
+    /*Four Columns*/
+    .vCol.four {
+        width: 25%;
+    }
+
+        .vCol.four.double {
+            width: 50%;
+        }
+
+        .vCol.four.triple {
+            width: 75%;
+        }
+
+    /*Five Columns*/
+    .vCol.five {
+        width: 20%;
+    }
+
+        .vCol.five.double {
+            width: 40%;
+        }
+
+        .vCol.five.triple {
+            width: 60%;
+        }
+
+        .vCol.five.four {
+            width: 80%;
+        }
+
+    /*Six Columns*/
+    .vCol.six {
+        width: 16.66%;
+    }
+
+        .vCol.six.double {
+            width: 33.33%;
+        }
+
+        .vCol.six.triple {
+            width: 50%;
+        }
+
+        .vCol.six.four {
+            width: 66.66%;
+        }
+
+        .vCol.six.five {
+            width: 83.33%;
+        }
+
+    /*Seven Columns*/
+    .vCol.seven {
+        width: 14.28%;
+    }
+
+        .vCol.seven.double {
+            width: 28.57%;
+        }
+
+        .vCol.seven.triple {
+            width: 42.85%;
+        }
+
+    /*Eight Columns*/
+    .vCol.eight {
+        width: 12.5%;
+    }
+
+        .vCol.eight.double {
+            width: 25%;
+        }
+
+        .vCol.eight.triple {
+            width: 37.5%;
+        }
+
+        .vCol.eight.four {
+            width: 50%;
+        }
+
+        .vCol.eight.five {
+            width: 62.5%;
+        }
+
+    /*Nine Columns*/
+    .vCol.nine {
+        width: 11.11%;
+    }
+
+        .vCol.nine.double {
+            width: 22.22%;
+        }
+
+        .vCol.nine.triple {
+            width: 33.33%;
+        }
+
+    /*Ten Columns*/
+    .vCol.ten {
+        width: 10%;
+    }
+
+        .vCol.ten.double {
+            width: 20%;
+        }
+
+        .vCol.ten.triple {
+            width: 30%;
+        }
+
+        .vCol.ten.four {
+            width: 40%;
+        }
+
+        .vCol.ten.five {
+            width: 50%;
+        }
+
+        .vCol.ten.six {
+            width: 60%;
+        }
+
+    /*Cell Contents sizing*/
+    .vCol > label,
+    .vCol > input,
+    .vCol > select,
+    .vCol > textarea,
+    .vCol > * {
+        display: block;
+        width: 100%;
+    }
+
+        .vCol > *.eighty5 {
+            width: 85%;
+            display: inline-block;
+        }
+
+        .vCol > *.seventy5 {
+            width: 85%;
+            display: inline-block;
+        }
+
+        .vCol > *.half {
+            width: 50%;
+            display: inline-block;
+        }
+
+    .vCol input {
+        min-width: 0;
+    }
+
+    .vCol .vCol {
+        display: inline-block;
+    }
+
+    /*Allow space for contextual help icon*/
+    .vCol > .hasHelp {
+        display: inline-block;
+        width: auto;
+        margin-right: 0.5em;
+    }
+
+/*Switch vertical alignment for validation rows*/
+.validationRow .vCol {
+    vertical-align: top;
+}
+
+
+
+
+.msOrderTab,
+.soldToTab {
+    display: none;
+}
+
+
+.sectionHorizontalTitle {
+    background-color: #FFF;
+    color: #666;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    height: 3em;
+    padding-top: 0.3em;
+    padding-bottom: 0.6em;
+    clear: both;
+    border-bottom: 1px solid #666;
+}
+
+label {
+    margin-bottom: 0.3em;
+}
+
+.hRow > .vCol.two,
+.hRow > .vCol.four {
+    min-height: 5.3em;
+}
+
+.hRow.info > .vCol,
+.hRow > .vCol.four.double {
+    min-height: 0;
+}
+
+.hRow.bulkOperations > .vCol {
+    vertical-align: middle;
+}
+
+.vCol.notes {
+    position: relative;
+    margin-top: -5.1em;
+    top: 5.1em;
+}
+
+.vCol.notes > textarea {
+    height: 6.1em;
+    overflow: hidden;
+}
+
+input.hasDatePicker {
+    display: inline;
+    width: calc(100% - 16px);
+}
+
+:-ms-input-placeholder {
+    color: gray;
+}
+
+.vCol > .k-icon {
+    display: inline-block;
+    width: 16px;
+}
+
+.validationMessage {
+    color: #F00;
+}
+
+input[disabled=""], textarea[disabled=""] {
+    background-color: transparent;
+    border: 0;
+}
+
+p.right {
+    text-align: right;
+}
+
+.topSpace {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*Needed to specify the font as our site wide default was being overidden by jquery ui*/
+body .ui-widget {
+    font-family: "Segoe UI", Tahoma, Helvetica,  Arial, Verdana, sans-serif;
+}
+
+/*The tab control area*/
+.exceptionsTabControl {
+    width: 100%;
+}
+
+    .exceptionsTabControl > ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .exceptionsTabControl > ul > li {
+            display: inline-block;
+        }
+
+    .exceptionsTabControl.ui-tabs {
+        border: 0;
+        border-radius: 0;
+        background: none;
+    }
+
+        .exceptionsTabControl.ui-tabs .ui-tabs-panel {
+            padding: 0;
+        }
+
+    .exceptionsTabControl .ui-tabs-nav {
+        border: 0;
+        border-radius: 0;
+        background: none;
+    }
+
+        .exceptionsTabControl .ui-tabs-nav > li {
+            border: 0;
+            background: none;
+        }
+
+    .exceptionsTabControl .tabContainer {
+        width: 100%;
+        padding: 2em 1em;
+    }
+
+    .exceptionsTabControl .k-datepicker {
+        width: 100%;
+    }
+
+    .exceptionsTabControl input[type="radio"] {
+        margin-right: 1em;
+        position: relative;
+        top: 0.2em;
+    }
+
+.autoWidth > .vCol {
+    width: auto;
+}
+
+/*Telerik/jquery ui override styles*/
+.k-block, .k-button, .k-textbox, .k-drag-clue, .k-touch-scrollbar, .k-window, .k-window-titleless .k-window-content, .k-window-action, .k-inline-block, .k-grid .k-filter-options, .k-grouping-header .k-group-indicator, .k-autocomplete, .k-multiselect, .k-combobox, .k-dropdown, .k-dropdown-wrap, .k-datepicker, .k-timepicker, .k-colorpicker, .k-datetimepicker, .k-numerictextbox, .k-picker-wrap, .k-numeric-wrap, .k-list-container.k-colorpicker, .k-calendar-container, .k-calendar td, .k-calendar .k-link, .k-treeview .k-in, .k-editor-inline, .k-tooltip, .k-tile, .k-slider-track, .k-slider-selection, .k-upload, .k-dropdown-wrap .k-input, .k-picker-wrap .k-input, .k-numeric-wrap .k-input {
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+input.k-input {
+    font-size: 1.2em !important;
+    font-size: 1.2rem !important;
+    height: 2.4em !important;
+    height: 2.4rem !important;
+    min-width: 5em !important;
+    min-width: 5rem !important;
+    background-color: #FFF !important;
+    border: 1px solid #666 !important;
+    padding: 4px !important;
+}
+
+.k-picker-wrap {
+    border: 0 !important;
+}
+
+.ui-tabs-active > a {
+    font-size: 1.2em !important;
+    font-size: 1.2rem !important;
+    line-height: 1.6em !important;
+    line-height: 1.6rem !important;
+    font-weight: 600 !important;
+    color: #FFF !important;
+    background-color: #666 !important;
+    text-transform: uppercase !important;
+    display: inline-block !important;
+}
+
+/*Added by Ian: fixes the issue of incomplete outline of autocomplete comapany control*/
+.k-autocomplete.k-header {
+    padding-right: 10px;
+}
+
+.soldToTab .k-autocomplete.k-header {
+    padding-right: 0;
+    width: 100%;
+}
+
+.ui-tabs .ui-tabs-nav {
+    padding: 0 !important;
+}
+
+    .ui-tabs .ui-tabs-nav li *.tabItem {
+        font-size: 1.2em;
+        font-size: 1.2rem;
+        line-height: 1.6em;
+        line-height: 1.6rem;
+        font-weight: 600;
+        color: #000;
+        background-color: #F2F2F2;
+        text-transform: uppercase;
+        text-align: center;
+        min-height: 3em;
+        min-height: 3rem;
+        padding: 7px 10px;
+        cursor: pointer;
+    }
+
+/*Style for the three editable fields in the Exceptions Details grid, give them a border and higher weight to make them stand out a bit more*/
+.exceptionsDetailsGrid tr td:nth-child(3),
+.exceptionsDetailsGrid tr td:nth-child(4),
+.exceptionsDetailsGrid tr td:nth-child(5) {
+    background-color: #FFF;
+    border: 1px solid #eee;
+    font-weight: 600;
+}
+
+/*Special style to push the first header cell in the responsive grid down to make room for the missing label around the select check box in each row of the exceptions details grid*/
+.detailsArea .responsiveHeader label:nth-child(2) {
+    margin-top: 2.8em;
+}
+
+.selectAllForSmallerScreensHolder {
+    margin-bottom: 0.5em;
+    display: none;
+}
+
+/*Media query to handle the re layout of content in the tab control*/
+@media all and (max-width: 51em) {
+    .channelTabRow2 .vCol.four {
+        width: 33.33%;
+    }
+}
+
+
+/*Another Media query to handle the re layout of content in the tab control again*/
+@media all and (max-width: 40em) {
+    .channelTabRow2 .vCol.four,
+    .soldToTab .vCol,
+    .msOrderTab .vCol {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .detailsAreaInfo .vCol {
+        width: 50%;
+    }
+
+    .detailsArea table tbody tr td:nth-last-child(3) {
+        border-bottom: 1px solid #666;
+        margin-bottom: 0;
+    }
+
+    .selectAllForSmallerScreensHolder {
+        display: inline-block;
+    }
+}
+/*Icons*/
+.excelIcon {
+    background-image: url('../../platform/img/Icons.png');
+    background-position: -679px -399px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+}
+
+form input.excelIcon {
+    background-color: #FFF;
+}
+
+    form input.excelIcon:hover,
+    form input.excelIcon:focus {
+        background-color: #FFF;
+    }
+
+/*Commented out by ian, replaced with tooltip style in order to display text with custom style (not using html title hover display)*/
+/*.infoIcon {
+    background-image: url('../../platform/img/Icons.png');
+    background-position: -399px -280px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+}
+.infoIcon:hover {
+    background-image: url('../../platform/img/Icons.png');
+    background-position: -439px -280px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+}*/
+
+div.tooltip span {
+    display: none;
+    color: grey;
+    z-index: 99;
+}
+
+div.tooltip {
+    display: inline-block;
+    position: relative;
+    background-image: url('../../platform/img/Icons.png');
+    background-position: -399px -280px;
+    width: 16px;
+    height: 16px;
+}
+
+    div.tooltip:hover {
+        position: relative;
+        background-image: url('../../platform/img/Icons.png');
+        background-position: -439px -280px;
+        width: 16px;
+        height: 16px;
+    }
+
+        div.tooltip:hover span {
+            display: block;
+            position: absolute;
+            border: 2px solid #0072C6;
+            background-color: white;
+            margin-left: 25px;
+            margin-top: -10px;
+            padding: 10px;
+            font-weight: lighter;
+        }
+
+/*Ian -added to fix padding on the order results data grid, to prevent the right most column filter icon from being cut off*/
+div.k-grid-header, div.k-grid-footer {
+    padding-right: 0 !important;
+}
